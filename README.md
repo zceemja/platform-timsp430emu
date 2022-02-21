@@ -15,8 +15,8 @@ MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-base
 2. Create PlatformIO project and configure a platform option in [platformio.ini](http://docs.platformio.org/page/projectconf.html) file:
 
 ```ini
-[env:emulator]
-platform = https://github.com/platformio/platform-timsp430.git
+[env:lpmsp430g2553-emu]
+platform = https://github.com/zceemja/platform-timsp430emu.git
 board = lpmsp430g2553
 framework = arduino
 ...
