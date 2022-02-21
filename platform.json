@@ -1,0 +1,43 @@
+{
+  "name": "timsp430emu",
+  "title": "TI MSP430 Emulator",
+  "description": "MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.",
+  "homepage": "http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/msp/overview.page",
+  "license": "Apache-2.0",
+  "keywords": [
+      "dev-platform",
+      "Texas Instruments",
+      "MSP430"
+  ],
+  "engines": {
+    "platformio": "^5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/platformio/platform-timsp430.git"
+  },
+  "version": "2.3.0",
+  "frameworks": {
+    "arduino": {
+      "package": "framework-energiamsp430",
+      "script": "builder/frameworks/energia.py"
+    },
+    "energia": {
+      "package": "framework-energiamsp430",
+      "script": "builder/frameworks/energia.py"
+    }
+  },
+  "packages": {
+    "toolchain-timsp430": {
+      "type": "toolchain",
+      "owner": "platformio",
+      "version": "~1.40603.190926"
+    },
+    "framework-energiamsp430": {
+      "type": "framework",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.10810.0"
+    }
+  }
+}
